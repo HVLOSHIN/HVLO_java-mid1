@@ -1,19 +1,16 @@
 package lang.immutable.adress;
 
-public class Address {
-    private  String value;
+public class ImmutableAddress {
+    private final String value;
 
-    public Address(String value) {
+    public ImmutableAddress(String value) {
         this.value = value;
     }
 
     public String getValue() {
         return value;
     }
-
-    public void setValue(String value) {
-        this.value = value;
-    }
+    // setValue()는 final 이기 때문에 불가능!
 
     @Override
     public String toString() {
