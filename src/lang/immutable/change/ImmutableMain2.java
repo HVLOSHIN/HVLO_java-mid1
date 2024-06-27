@@ -6,6 +6,5 @@ public class ImmutableMain2 {
         obj1.add(20);
 
         System.out.println(obj1);
-        System.out.println(obj1);
     }
 }
