@@ -1,0 +1,16 @@
+package lang.wrapper;
+
+public class WrapperVsPrimitive1 {
+    public static void main(String[] args) {
+        int iterations = 1_000_000_000; // 반복횟수 10억
+        long start = System.currentTimeMillis();
+        long sum1 = 0;
+        for (int i = 0; i < iterations; i++) {
+            sum1 += i;
+        }
+        long end = System.currentTimeMillis();
+        System.out.println("Iteration time: " + (end - start) + " ms");
+        System.out.println("sum1: " + sum1);
+
+    }
+}
